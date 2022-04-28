@@ -11,7 +11,6 @@ pipeline {
               			
             }           
         }
-    }
         stage('SonarQube analysis') {
             steps {
                         withSonarQubeEnv('sonarqube-8.9') { 
@@ -21,4 +20,5 @@ pipeline {
    						 }
         		}
 		}
+	}
 }
